@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Coffee Health</title>
+    
+    
+<meta charset="utf-8">
+    <meta http-equiv="compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="/contact.css"/>
+  </head>
+  <body>
+<div class="navigation-bar">
+<ul>
+  <img src="https://cdn.glitch.global/08bb1897-03ab-4659-a9ff-f0e92f24c316/logo%20(1).png?v=1669055944001" alt="Coffee Health Logo">
+  <li><a class="active" href="home.html">Home</a></li>
+  <li><a href="news.html">Products and Services</a></li>
+  <li><a href="contact.html">Contact Us </a></li>
+</ul>
+    </div>
+  </body>
+<body>
+    <div class="column-layout">
+      <div class="main-column">
+        <h1>
+          Hours
+        </h1>
+        <p>
+        <b>Mon-Thurs:</b> 9:00am - 2:30pm
+          <br>
+          <b>Fri-Sat:</b> 10:00am - 6:45pm
+          <b>Sun:</b> Closed
+        </p>
+      </div>
+      <div class="sidebar-one"> 
+        <body>
+          <h1>
+            Location
+          </h1>
+        <p>
+          2416 Chapel Ave.
+          <br>
+          Deland, FL 32456
+          <br>
+          <b>Phone:</b> (346)-248-1294
+          <br>
+          <b>Email:</b> healthycoffee.co@gmail.com
+          </p>
+        </body>
+      </div>
+    </div>
+  <form
+        action="https://us-central1-alhsofunctions.cloudfunctions.net/alhsoFormExample"
+        method="post"
+        >
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="user_name"/>
+    </div>
+    <div>
+      <label for="mail">E-mail:</label>
+      <input type="email" id="mail" name="user_mail"/>
+    </div>
+    <div>
+      <label for="msg">Message:</label>
+      <textarea id="msg" name="user_message"></textarea>
+    </div>
+    <div class="button">
+      <button type="submit">
+        Send your message
+      </button>
+    </div>
+  </form>
+  <style>
+  form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+    }
+    form div+div {
+      margin-top: 1em;
+    }
+    
+    ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 0.5em;
+}
+  </style>
+  </body>
+</html>
